@@ -1,0 +1,39 @@
+# --- Ayg Labs CGI Engine .gitignore ---
+
+# Derleme Dosyaları (C++)
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+/bin/
+/build/
+/out/
+
+# Python ve AI Dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+/models/*.pth    # Büyük AI model dosyalarını GitHub'a yüklememek için
+/models/*.onnx
+
+# CGI ve Render Dosyaları (En önemlisi!)
+# Devasa render çıktılarını ve geçici dosyaları engeller
+*.mp4
+*.mov
+*.exr
+*.png
+/renders/
+/temp_assets/
+
+# Sistem Dosyaları
+.DS_Store
+Thumbs.db
+
+# IDE Dosyaları (Visual Studio / VS Code)
+.vscode/
+.vs/
+*.user
+*.sln
